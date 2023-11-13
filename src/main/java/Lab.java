@@ -1,5 +1,9 @@
 
 public class Lab {
+    String adminName = "admin";
+    String adminPassword = "qwerty";
+    String userName = "user";
+    String userPassword = "password";
     /**
      * This challenge represents a hardcoded login example:
      *
@@ -15,6 +19,13 @@ public class Lab {
      * @return true if there is a successful login, and false otherwise.
      */
     public boolean login(String username, String password){
-        return false;
+        if (username.equals(adminName) && password.equals(adminPassword)) {
+            return true;
+        } else if (username.equals(userName) && password.equals(userPassword)) {
+            return true;
+        } else {
+            return false;
+        }
+       
     }
 }
